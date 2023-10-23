@@ -1,5 +1,5 @@
 # Hydrate
-A simple Godot plugin to make you remember to hydrate periodically. Beneficial especially developers who migrated from fancy engines that have long compile times and stuff. Unfortunately Godot does not have long compile times or other features for you to have a coffee break. This plugin will help you stay hydrated.
+A simple Godot plugin to make you remember to hydrate periodically. Beneficial especially for developers who migrated from fancy engines that have long compile times. Unfortunately Godot does not have long compile times or other features for you to have a coffee break. This plugin will help you stay hydrated.
 
 ## Settings
 There are some very simple settings to customize the plugin:
