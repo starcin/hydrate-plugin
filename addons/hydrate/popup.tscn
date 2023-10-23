@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://dq1oo4kogll73"]
+
+[ext_resource type="Script" path="res://addons/hydrate/popup.gd" id="1_q0g77"]
+
+[node name="AcceptDialog" type="AcceptDialog"]
+title = "Hydrate!"
+initial_position = 2
+size = Vector2i(209, 118)
+transient = false
+exclusive = false
+unresizable = true
+borderless = true
+popup_window = true
+ok_button_text = "OK, I drank something"
+script = ExtResource("1_q0g77")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 201.0
+offset_bottom = 69.0
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Do not forget to hydrate!"
+
+[node name="DisableCB" type="CheckBox" parent="VBoxContainer"]
+layout_mode = 2
+text = "Disable popup"
+
+[connection signal="toggled" from="VBoxContainer/DisableCB" to="." method="_on_disable_cb_toggled"]
